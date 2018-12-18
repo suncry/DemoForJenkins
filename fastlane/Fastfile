@@ -49,24 +49,24 @@ build_number: "#{build}"
 end
 
 #指定项目的scheme名称
-scheme=“MedlinkerLite”
+scheme="MedlinkerLite"
 #蒲公英api_key和user_key
-api_key=“87a96feb51f5ecdfafc2bc4c9eeb045a”
-user_key=“dad6308763eece8035c49ea33e676138”
+api_key="87a96feb51f5ecdfafc2bc4c9eeb045a"
+user_key="dad6308763eece8035c49ea33e676138"
 
 # 任务脚本
 platform :ios do
 lane :development_build do|options|
 branch = options[:branch]
 
-puts “开始打development ipa”
+puts "开始打development ipa"
 
 updateProjectBuildNumber #更改项目build号
 
 # 开始打包
 gym(
 #输出的ipa名称
-output_name:”#{scheme}_#{get_build_number()}”,
+output_name:"#{scheme}_#{get_build_number()}",
 # 是否清空以前的编译信息 true：是
 clean:true,
 # 指定打包方式，Release 或者 Debug
@@ -79,7 +79,7 @@ output_directory:"./fastlane/build",
 
 puts "开始上传蒲公英"
 # 开始上传蒲公英
-pgyer(api_key: “#{api_key}”, user_key: “#{user_key}”)
+pgyer(api_key: "#{api_key}", user_key: "#{user_key}")
 
 end
 end
