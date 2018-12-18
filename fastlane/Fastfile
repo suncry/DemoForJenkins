@@ -49,7 +49,7 @@ user_key="dad6308763eece8035c49ea33e676138"
 
 # 任务脚本
 platform :ios do
-lane :development_build do |options|
+lane :development_build do |options|
 branch = options[:branch]
 
 puts "开始打development ipa"
