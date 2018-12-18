@@ -1,0 +1,40 @@
+PODS:
+  - Alamofire (4.8.0)
+  - AlamofireObjectMapper (5.2.0):
+    - Alamofire (~> 4.7)
+    - ObjectMapper (~> 3.4)
+  - Kingfisher (4.10.1)
+  - ObjectMapper (3.4.1)
+  - RTRootNavigationController (0.7.1):
+    - RTRootNavigationController/Core (= 0.7.1)
+  - RTRootNavigationController/Core (0.7.1)
+  - SwiftProtobuf (1.0.0)
+
+DEPENDENCIES:
+  - Alamofire (~> 4.8.0)
+  - AlamofireObjectMapper (~> 5.2)
+  - Kingfisher (~> 4.10.1)
+  - ObjectMapper (~> 3.4)
+  - RTRootNavigationController
+  - SwiftProtobuf (= 1.0.0)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Alamofire
+    - AlamofireObjectMapper
+    - Kingfisher
+    - ObjectMapper
+    - RTRootNavigationController
+    - SwiftProtobuf
+
+SPEC CHECKSUMS:
+  Alamofire: 3ec537f71edc9804815215393ae2b1a8ea33a844
+  AlamofireObjectMapper: 92b6ce2423a9d159e686f6a1d514a009bf903ddc
+  Kingfisher: c148cd7b47ebde9989f6bc7c27dcaa79d81279a0
+  ObjectMapper: 5311bd50ca732930959e7ca1a2de43ab823a5ced
+  RTRootNavigationController: afa6913402be26f8326f7f37fc1550aa67baddcc
+  SwiftProtobuf: 1e1e11595316724935ffe16c18ed79363a8808ac
+
+PODFILE CHECKSUM: 7210e54959fcd554b5031546290cba253185dd00
+
+COCOAPODS: 1.5.3

@@ -1,0 +1,8 @@
+app_identifier("Medlinker.MedlinkerLite") # The bundle identifier of your app
+apple_id("774164@qq.com") # Your Apple email address
+
+itc_team_id("106782802") # App Store Connect Team ID
+team_id("298LEY82V6") # Developer Portal Team ID
+
+# For more information about the Appfile, see:
+#     https://docs.fastlane.tools/advanced/#appfile

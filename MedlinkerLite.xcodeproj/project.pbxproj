@@ -1,0 +1,966 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0D24800721B232670044A91A /* PatientSearchResultsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D24800621B232670044A91A /* PatientSearchResultsController.swift */; };
+		0D24800A21B263D20044A91A /* IMType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D24800921B263D20044A91A /* IMType.swift */; };
+		0DB595C121AE7D7800AF61FC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DB595C021AE7D7800AF61FC /* AppDelegate.swift */; };
+		0DB595C321AE7D7800AF61FC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DB595C221AE7D7800AF61FC /* ViewController.swift */; };
+		0DB595C621AE7D7800AF61FC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0DB595C421AE7D7800AF61FC /* Main.storyboard */; };
+		0DB595C821AE7D7B00AF61FC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0DB595C721AE7D7B00AF61FC /* Assets.xcassets */; };
+		0DB595CB21AE7D7B00AF61FC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0DB595C921AE7D7B00AF61FC /* LaunchScreen.storyboard */; };
+		0DB595D621AE7D7B00AF61FC /* MedlinkerLiteTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DB595D521AE7D7B00AF61FC /* MedlinkerLiteTests.swift */; };
+		0DB595E121AE7D7B00AF61FC /* MedlinkerLiteUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DB595E021AE7D7B00AF61FC /* MedlinkerLiteUITests.swift */; };
+		0DB595EF21AE8E7C00AF61FC /* PatientsListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DB595EE21AE8E7C00AF61FC /* PatientsListTableViewController.swift */; };
+		0DB595F121AE9C9100AF61FC /* PendingTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DB595F021AE9C9100AF61FC /* PendingTableViewController.swift */; };
+		0DB595F321AEACAD00AF61FC /* MsgTableViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DB595F221AEACAD00AF61FC /* MsgTableViewDelegate.swift */; };
+		0DB595F521AEAE5300AF61FC /* PendingMsgTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DB595F421AEAE5300AF61FC /* PendingMsgTableViewCell.swift */; };
+		0DB595F721AFD48200AF61FC /* PatientCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DB595F621AFD48200AF61FC /* PatientCell.swift */; };
+		0DB595FA21AFD84200AF61FC /* Patient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DB595F921AFD84200AF61FC /* Patient.swift */; };
+		0DB595FC21AFD94600AF61FC /* CYObjectTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DB595FB21AFD94600AF61FC /* CYObjectTool.swift */; };
+		0DB595FF21AFE25800AF61FC /* CYNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DB595FE21AFE25800AF61FC /* CYNetwork.swift */; };
+		0DB5960121AFED7300AF61FC /* MLHTTPClientURLPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DB5960021AFED7200AF61FC /* MLHTTPClientURLPath.swift */; };
+		0DB5960321AFED9200AF61FC /* MLConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DB5960221AFED9200AF61FC /* MLConfiguration.swift */; };
+		0DB5960521AFFD3A00AF61FC /* MLAppInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DB5960421AFFD3A00AF61FC /* MLAppInfo.swift */; };
+		0DB5960721AFFE8000AF61FC /* MLConstant+WebServicePath.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DB5960621AFFE8000AF61FC /* MLConstant+WebServicePath.swift */; };
+		0DB5960C21AFFF5A00AF61FC /* MLConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DB5960821AFFF5A00AF61FC /* MLConstant.swift */; };
+		0DB5960D21AFFF5A00AF61FC /* MLConstant+CacheKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DB5960921AFFF5A00AF61FC /* MLConstant+CacheKey.swift */; };
+		0DB5960E21AFFF5A00AF61FC /* MLConstant+UserDefaultKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DB5960A21AFFF5A00AF61FC /* MLConstant+UserDefaultKey.swift */; };
+		0DB5960F21AFFF5A00AF61FC /* MLConstant+Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DB5960B21AFFF5A00AF61FC /* MLConstant+Common.swift */; };
+		0DB5961221B1113C00AF61FC /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0DB5961121B1113A00AF61FC /* Login.storyboard */; };
+		0DB5961521B112E500AF61FC /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DB5961421B112E500AF61FC /* LoginViewController.swift */; };
+		0DB5961721B113EF00AF61FC /* ResponseData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DB5961621B113EF00AF61FC /* ResponseData.swift */; };
+		0DB5961921B11F8A00AF61FC /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DB5961821B11F8A00AF61FC /* User.swift */; };
+		0DB5961B21B121D800AF61FC /* LoginUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DB5961A21B121D800AF61FC /* LoginUser.swift */; };
+		0DB5961D21B127EA00AF61FC /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DB5961C21B127EA00AF61FC /* UserModel.swift */; };
+		0DB5962021B128CF00AF61FC /* CYModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DB5961F21B128CF00AF61FC /* CYModel.swift */; };
+		0DB5962321B1314900AF61FC /* PatientModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DB5962221B1314900AF61FC /* PatientModel.swift */; };
+		0DC5E3ED21BA4E9400EA7479 /* IMUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DC5E3EC21BA4E9300EA7479 /* IMUser.swift */; };
+		0DC5E40321BA563F00EA7479 /* user.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DC5E3F021BA563E00EA7479 /* user.pb.swift */; };
+		0DC5E40421BA563F00EA7479 /* group.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DC5E3F121BA563E00EA7479 /* group.pb.swift */; };
+		0DC5E40521BA563F00EA7479 /* json.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DC5E3F321BA563E00EA7479 /* json.pb.swift */; };
+		0DC5E40621BA563F00EA7479 /* card.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DC5E3F421BA563E00EA7479 /* card.pb.swift */; };
+		0DC5E40721BA563F00EA7479 /* anchor.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DC5E3F521BA563E00EA7479 /* anchor.pb.swift */; };
+		0DC5E40821BA563F00EA7479 /* voice.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DC5E3F621BA563E00EA7479 /* voice.pb.swift */; };
+		0DC5E40921BA563F00EA7479 /* location.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DC5E3F721BA563E00EA7479 /* location.pb.swift */; };
+		0DC5E40A21BA563F00EA7479 /* text.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DC5E3F821BA563E00EA7479 /* text.pb.swift */; };
+		0DC5E40B21BA563F00EA7479 /* image.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DC5E3F921BA563E00EA7479 /* image.pb.swift */; };
+		0DC5E40C21BA563F00EA7479 /* business_card.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DC5E3FA21BA563E00EA7479 /* business_card.pb.swift */; };
+		0DC5E40D21BA563F00EA7479 /* business_notify.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DC5E3FB21BA563E00EA7479 /* business_notify.pb.swift */; };
+		0DC5E40E21BA563F00EA7479 /* notice.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DC5E3FC21BA563E00EA7479 /* notice.pb.swift */; };
+		0DC5E40F21BA563F00EA7479 /* withdraw.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DC5E3FE21BA563E00EA7479 /* withdraw.pb.swift */; };
+		0DC5E41021BA563F00EA7479 /* friend_operation.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DC5E3FF21BA563E00EA7479 /* friend_operation.pb.swift */; };
+		0DC5E41121BA563F00EA7479 /* login.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DC5E40021BA563E00EA7479 /* login.pb.swift */; };
+		0DC5E41221BA563F00EA7479 /* group_operation.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DC5E40121BA563E00EA7479 /* group_operation.pb.swift */; };
+		0DC5E41321BA563F00EA7479 /* message.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DC5E40221BA563E00EA7479 /* message.pb.swift */; };
+		0DC5E41621BA578700EA7479 /* MessageSendCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DC5E41521BA578700EA7479 /* MessageSendCenter.swift */; };
+		0DC5E43121BA5F0B00EA7479 /* MsgViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DC5E43021BA5F0B00EA7479 /* MsgViewController.swift */; };
+		0DC5E43321BA609600EA7479 /* MsgModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DC5E43221BA609600EA7479 /* MsgModel.swift */; };
+		9B85C93F2C0D60D0C9FA4EEB /* Pods_MedlinkerLite.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7F19E96715E8AF05EAB9327 /* Pods_MedlinkerLite.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0DB595D221AE7D7B00AF61FC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0DB595B521AE7D7700AF61FC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0DB595BC21AE7D7800AF61FC;
+			remoteInfo = MedlinkerLite;
+		};
+		0DB595DD21AE7D7B00AF61FC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0DB595B521AE7D7700AF61FC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0DB595BC21AE7D7800AF61FC;
+			remoteInfo = MedlinkerLite;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		04154756FA875FCA3CBBACE2 /* Pods-MedlinkerLite.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MedlinkerLite.release.xcconfig"; path = "Pods/Target Support Files/Pods-MedlinkerLite/Pods-MedlinkerLite.release.xcconfig"; sourceTree = "<group>"; };
+		0D24800621B232670044A91A /* PatientSearchResultsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatientSearchResultsController.swift; sourceTree = "<group>"; };
+		0D24800921B263D20044A91A /* IMType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IMType.swift; sourceTree = "<group>"; };
+		0DB595BD21AE7D7800AF61FC /* MedlinkerLite.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MedlinkerLite.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0DB595C021AE7D7800AF61FC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		0DB595C221AE7D7800AF61FC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		0DB595C521AE7D7800AF61FC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		0DB595C721AE7D7B00AF61FC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0DB595CA21AE7D7B00AF61FC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		0DB595CC21AE7D7B00AF61FC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0DB595D121AE7D7B00AF61FC /* MedlinkerLiteTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MedlinkerLiteTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0DB595D521AE7D7B00AF61FC /* MedlinkerLiteTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedlinkerLiteTests.swift; sourceTree = "<group>"; };
+		0DB595D721AE7D7B00AF61FC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0DB595DC21AE7D7B00AF61FC /* MedlinkerLiteUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MedlinkerLiteUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0DB595E021AE7D7B00AF61FC /* MedlinkerLiteUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedlinkerLiteUITests.swift; sourceTree = "<group>"; };
+		0DB595E221AE7D7B00AF61FC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0DB595EE21AE8E7C00AF61FC /* PatientsListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatientsListTableViewController.swift; sourceTree = "<group>"; };
+		0DB595F021AE9C9100AF61FC /* PendingTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PendingTableViewController.swift; sourceTree = "<group>"; };
+		0DB595F221AEACAD00AF61FC /* MsgTableViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MsgTableViewDelegate.swift; sourceTree = "<group>"; };
+		0DB595F421AEAE5300AF61FC /* PendingMsgTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PendingMsgTableViewCell.swift; sourceTree = "<group>"; };
+		0DB595F621AFD48200AF61FC /* PatientCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatientCell.swift; sourceTree = "<group>"; };
+		0DB595F921AFD84200AF61FC /* Patient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Patient.swift; sourceTree = "<group>"; };
+		0DB595FB21AFD94600AF61FC /* CYObjectTool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CYObjectTool.swift; sourceTree = "<group>"; };
+		0DB595FE21AFE25800AF61FC /* CYNetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CYNetwork.swift; sourceTree = "<group>"; };
+		0DB5960021AFED7200AF61FC /* MLHTTPClientURLPath.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MLHTTPClientURLPath.swift; sourceTree = "<group>"; };
+		0DB5960221AFED9200AF61FC /* MLConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MLConfiguration.swift; sourceTree = "<group>"; };
+		0DB5960421AFFD3A00AF61FC /* MLAppInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MLAppInfo.swift; sourceTree = "<group>"; };
+		0DB5960621AFFE8000AF61FC /* MLConstant+WebServicePath.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "MLConstant+WebServicePath.swift"; sourceTree = "<group>"; };
+		0DB5960821AFFF5A00AF61FC /* MLConstant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MLConstant.swift; sourceTree = "<group>"; };
+		0DB5960921AFFF5A00AF61FC /* MLConstant+CacheKey.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "MLConstant+CacheKey.swift"; sourceTree = "<group>"; };
+		0DB5960A21AFFF5A00AF61FC /* MLConstant+UserDefaultKey.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "MLConstant+UserDefaultKey.swift"; sourceTree = "<group>"; };
+		0DB5960B21AFFF5A00AF61FC /* MLConstant+Common.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "MLConstant+Common.swift"; sourceTree = "<group>"; };
+		0DB5961121B1113A00AF61FC /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
+		0DB5961421B112E500AF61FC /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		0DB5961621B113EF00AF61FC /* ResponseData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseData.swift; sourceTree = "<group>"; };
+		0DB5961821B11F8A00AF61FC /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		0DB5961A21B121D800AF61FC /* LoginUser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginUser.swift; sourceTree = "<group>"; };
+		0DB5961C21B127EA00AF61FC /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
+		0DB5961F21B128CF00AF61FC /* CYModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CYModel.swift; sourceTree = "<group>"; };
+		0DB5962221B1314900AF61FC /* PatientModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatientModel.swift; sourceTree = "<group>"; };
+		0DC5E3EC21BA4E9300EA7479 /* IMUser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IMUser.swift; sourceTree = "<group>"; };
+		0DC5E3F021BA563E00EA7479 /* user.pb.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = user.pb.swift; sourceTree = "<group>"; };
+		0DC5E3F121BA563E00EA7479 /* group.pb.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = group.pb.swift; sourceTree = "<group>"; };
+		0DC5E3F321BA563E00EA7479 /* json.pb.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = json.pb.swift; sourceTree = "<group>"; };
+		0DC5E3F421BA563E00EA7479 /* card.pb.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = card.pb.swift; sourceTree = "<group>"; };
+		0DC5E3F521BA563E00EA7479 /* anchor.pb.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = anchor.pb.swift; sourceTree = "<group>"; };
+		0DC5E3F621BA563E00EA7479 /* voice.pb.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = voice.pb.swift; sourceTree = "<group>"; };
+		0DC5E3F721BA563E00EA7479 /* location.pb.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = location.pb.swift; sourceTree = "<group>"; };
+		0DC5E3F821BA563E00EA7479 /* text.pb.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = text.pb.swift; sourceTree = "<group>"; };
+		0DC5E3F921BA563E00EA7479 /* image.pb.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = image.pb.swift; sourceTree = "<group>"; };
+		0DC5E3FA21BA563E00EA7479 /* business_card.pb.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = business_card.pb.swift; sourceTree = "<group>"; };
+		0DC5E3FB21BA563E00EA7479 /* business_notify.pb.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = business_notify.pb.swift; sourceTree = "<group>"; };
+		0DC5E3FC21BA563E00EA7479 /* notice.pb.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = notice.pb.swift; sourceTree = "<group>"; };
+		0DC5E3FE21BA563E00EA7479 /* withdraw.pb.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = withdraw.pb.swift; sourceTree = "<group>"; };
+		0DC5E3FF21BA563E00EA7479 /* friend_operation.pb.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = friend_operation.pb.swift; sourceTree = "<group>"; };
+		0DC5E40021BA563E00EA7479 /* login.pb.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = login.pb.swift; sourceTree = "<group>"; };
+		0DC5E40121BA563E00EA7479 /* group_operation.pb.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = group_operation.pb.swift; sourceTree = "<group>"; };
+		0DC5E40221BA563E00EA7479 /* message.pb.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = message.pb.swift; sourceTree = "<group>"; };
+		0DC5E41521BA578700EA7479 /* MessageSendCenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageSendCenter.swift; sourceTree = "<group>"; };
+		0DC5E43021BA5F0B00EA7479 /* MsgViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MsgViewController.swift; sourceTree = "<group>"; };
+		0DC5E43221BA609600EA7479 /* MsgModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MsgModel.swift; sourceTree = "<group>"; };
+		98A0D28175D4A5D90352E037 /* Pods-MedlinkerLite.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MedlinkerLite.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MedlinkerLite/Pods-MedlinkerLite.debug.xcconfig"; sourceTree = "<group>"; };
+		A7F19E96715E8AF05EAB9327 /* Pods_MedlinkerLite.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MedlinkerLite.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0DB595BA21AE7D7800AF61FC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9B85C93F2C0D60D0C9FA4EEB /* Pods_MedlinkerLite.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0DB595CE21AE7D7B00AF61FC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0DB595D921AE7D7B00AF61FC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0D24800821B263B90044A91A /* IM */ = {
+			isa = PBXGroup;
+			children = (
+				0D24800921B263D20044A91A /* IMType.swift */,
+			);
+			path = IM;
+			sourceTree = "<group>";
+		};
+		0DB595B421AE7D7700AF61FC = {
+			isa = PBXGroup;
+			children = (
+				0DB595BF21AE7D7800AF61FC /* MedlinkerLite */,
+				0DB595D421AE7D7B00AF61FC /* MedlinkerLiteTests */,
+				0DB595DF21AE7D7B00AF61FC /* MedlinkerLiteUITests */,
+				0DB595BE21AE7D7800AF61FC /* Products */,
+				D75E47CA7B6EFF3998306D83 /* Pods */,
+				E0AECEF8FBEA2ACC509B28AD /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		0DB595BE21AE7D7800AF61FC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0DB595BD21AE7D7800AF61FC /* MedlinkerLite.app */,
+				0DB595D121AE7D7B00AF61FC /* MedlinkerLiteTests.xctest */,
+				0DB595DC21AE7D7B00AF61FC /* MedlinkerLiteUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0DB595BF21AE7D7800AF61FC /* MedlinkerLite */ = {
+			isa = PBXGroup;
+			children = (
+				0DC5E43021BA5F0B00EA7479 /* MsgViewController.swift */,
+				0DC5E41421BA577B00EA7479 /* Msg */,
+				0DC5E3EE21BA563E00EA7479 /* ProtoMessage */,
+				0DC5E3EC21BA4E9300EA7479 /* IMUser.swift */,
+				0D24800821B263B90044A91A /* IM */,
+				0DB5961E21B128B600AF61FC /* Model */,
+				0DB5961321B1128F00AF61FC /* Login */,
+				0DB5961021B00BE200AF61FC /* User */,
+				0DB595FD21AFE23B00AF61FC /* Network */,
+				0DB595F821AFD7EC00AF61FC /* Object */,
+				0DB595C021AE7D7800AF61FC /* AppDelegate.swift */,
+				0DB595F021AE9C9100AF61FC /* PendingTableViewController.swift */,
+				0DB595F221AEACAD00AF61FC /* MsgTableViewDelegate.swift */,
+				0DB595F421AEAE5300AF61FC /* PendingMsgTableViewCell.swift */,
+				0DB595EE21AE8E7C00AF61FC /* PatientsListTableViewController.swift */,
+				0D24800621B232670044A91A /* PatientSearchResultsController.swift */,
+				0DB595F621AFD48200AF61FC /* PatientCell.swift */,
+				0DB595C221AE7D7800AF61FC /* ViewController.swift */,
+				0DB595C421AE7D7800AF61FC /* Main.storyboard */,
+				0DB5961121B1113A00AF61FC /* Login.storyboard */,
+				0DB595C721AE7D7B00AF61FC /* Assets.xcassets */,
+				0DB595C921AE7D7B00AF61FC /* LaunchScreen.storyboard */,
+				0DB595CC21AE7D7B00AF61FC /* Info.plist */,
+			);
+			path = MedlinkerLite;
+			sourceTree = "<group>";
+		};
+		0DB595D421AE7D7B00AF61FC /* MedlinkerLiteTests */ = {
+			isa = PBXGroup;
+			children = (
+				0DB595D521AE7D7B00AF61FC /* MedlinkerLiteTests.swift */,
+				0DB595D721AE7D7B00AF61FC /* Info.plist */,
+			);
+			path = MedlinkerLiteTests;
+			sourceTree = "<group>";
+		};
+		0DB595DF21AE7D7B00AF61FC /* MedlinkerLiteUITests */ = {
+			isa = PBXGroup;
+			children = (
+				0DB595E021AE7D7B00AF61FC /* MedlinkerLiteUITests.swift */,
+				0DB595E221AE7D7B00AF61FC /* Info.plist */,
+			);
+			path = MedlinkerLiteUITests;
+			sourceTree = "<group>";
+		};
+		0DB595F821AFD7EC00AF61FC /* Object */ = {
+			isa = PBXGroup;
+			children = (
+				0DB595F921AFD84200AF61FC /* Patient.swift */,
+				0DB5961821B11F8A00AF61FC /* User.swift */,
+				0DB595FB21AFD94600AF61FC /* CYObjectTool.swift */,
+				0DB5961621B113EF00AF61FC /* ResponseData.swift */,
+			);
+			path = Object;
+			sourceTree = "<group>";
+		};
+		0DB595FD21AFE23B00AF61FC /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				0DB5960821AFFF5A00AF61FC /* MLConstant.swift */,
+				0DB5960921AFFF5A00AF61FC /* MLConstant+CacheKey.swift */,
+				0DB5960B21AFFF5A00AF61FC /* MLConstant+Common.swift */,
+				0DB5960A21AFFF5A00AF61FC /* MLConstant+UserDefaultKey.swift */,
+				0DB5960621AFFE8000AF61FC /* MLConstant+WebServicePath.swift */,
+				0DB5960221AFED9200AF61FC /* MLConfiguration.swift */,
+				0DB5960021AFED7200AF61FC /* MLHTTPClientURLPath.swift */,
+				0DB5960421AFFD3A00AF61FC /* MLAppInfo.swift */,
+				0DB595FE21AFE25800AF61FC /* CYNetwork.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		0DB5961021B00BE200AF61FC /* User */ = {
+			isa = PBXGroup;
+			children = (
+				0DB5961A21B121D800AF61FC /* LoginUser.swift */,
+				0DB5961C21B127EA00AF61FC /* UserModel.swift */,
+			);
+			path = User;
+			sourceTree = "<group>";
+		};
+		0DB5961321B1128F00AF61FC /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				0DB5961421B112E500AF61FC /* LoginViewController.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		0DB5961E21B128B600AF61FC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0DB5962121B1312C00AF61FC /* 我的患者 */,
+				0DB5961F21B128CF00AF61FC /* CYModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		0DB5962121B1312C00AF61FC /* 我的患者 */ = {
+			isa = PBXGroup;
+			children = (
+				0DB5962221B1314900AF61FC /* PatientModel.swift */,
+			);
+			path = "我的患者";
+			sourceTree = "<group>";
+		};
+		0DC5E3EE21BA563E00EA7479 /* ProtoMessage */ = {
+			isa = PBXGroup;
+			children = (
+				0DC5E3EF21BA563E00EA7479 /* misc */,
+				0DC5E3F221BA563E00EA7479 /* types */,
+				0DC5E3FD21BA563E00EA7479 /* commands */,
+				0DC5E40221BA563E00EA7479 /* message.pb.swift */,
+			);
+			path = ProtoMessage;
+			sourceTree = "<group>";
+		};
+		0DC5E3EF21BA563E00EA7479 /* misc */ = {
+			isa = PBXGroup;
+			children = (
+				0DC5E3F021BA563E00EA7479 /* user.pb.swift */,
+				0DC5E3F121BA563E00EA7479 /* group.pb.swift */,
+			);
+			path = misc;
+			sourceTree = "<group>";
+		};
+		0DC5E3F221BA563E00EA7479 /* types */ = {
+			isa = PBXGroup;
+			children = (
+				0DC5E3F321BA563E00EA7479 /* json.pb.swift */,
+				0DC5E3F421BA563E00EA7479 /* card.pb.swift */,
+				0DC5E3F521BA563E00EA7479 /* anchor.pb.swift */,
+				0DC5E3F621BA563E00EA7479 /* voice.pb.swift */,
+				0DC5E3F721BA563E00EA7479 /* location.pb.swift */,
+				0DC5E3F821BA563E00EA7479 /* text.pb.swift */,
+				0DC5E3F921BA563E00EA7479 /* image.pb.swift */,
+				0DC5E3FA21BA563E00EA7479 /* business_card.pb.swift */,
+				0DC5E3FB21BA563E00EA7479 /* business_notify.pb.swift */,
+				0DC5E3FC21BA563E00EA7479 /* notice.pb.swift */,
+			);
+			path = types;
+			sourceTree = "<group>";
+		};
+		0DC5E3FD21BA563E00EA7479 /* commands */ = {
+			isa = PBXGroup;
+			children = (
+				0DC5E3FE21BA563E00EA7479 /* withdraw.pb.swift */,
+				0DC5E3FF21BA563E00EA7479 /* friend_operation.pb.swift */,
+				0DC5E40021BA563E00EA7479 /* login.pb.swift */,
+				0DC5E40121BA563E00EA7479 /* group_operation.pb.swift */,
+			);
+			path = commands;
+			sourceTree = "<group>";
+		};
+		0DC5E41421BA577B00EA7479 /* Msg */ = {
+			isa = PBXGroup;
+			children = (
+				0DC5E41521BA578700EA7479 /* MessageSendCenter.swift */,
+				0DC5E43221BA609600EA7479 /* MsgModel.swift */,
+			);
+			path = Msg;
+			sourceTree = "<group>";
+		};
+		D75E47CA7B6EFF3998306D83 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				98A0D28175D4A5D90352E037 /* Pods-MedlinkerLite.debug.xcconfig */,
+				04154756FA875FCA3CBBACE2 /* Pods-MedlinkerLite.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		E0AECEF8FBEA2ACC509B28AD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A7F19E96715E8AF05EAB9327 /* Pods_MedlinkerLite.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0DB595BC21AE7D7800AF61FC /* MedlinkerLite */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0DB595E521AE7D7C00AF61FC /* Build configuration list for PBXNativeTarget "MedlinkerLite" */;
+			buildPhases = (
+				3814AAAE355DE25789774CD4 /* [CP] Check Pods Manifest.lock */,
+				0DB595B921AE7D7800AF61FC /* Sources */,
+				0DB595BA21AE7D7800AF61FC /* Frameworks */,
+				0DB595BB21AE7D7800AF61FC /* Resources */,
+				38768180D4BB9DDBE82F3D79 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MedlinkerLite;
+			productName = MedlinkerLite;
+			productReference = 0DB595BD21AE7D7800AF61FC /* MedlinkerLite.app */;
+			productType = "com.apple.product-type.application";
+		};
+		0DB595D021AE7D7B00AF61FC /* MedlinkerLiteTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0DB595E821AE7D7C00AF61FC /* Build configuration list for PBXNativeTarget "MedlinkerLiteTests" */;
+			buildPhases = (
+				0DB595CD21AE7D7B00AF61FC /* Sources */,
+				0DB595CE21AE7D7B00AF61FC /* Frameworks */,
+				0DB595CF21AE7D7B00AF61FC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0DB595D321AE7D7B00AF61FC /* PBXTargetDependency */,
+			);
+			name = MedlinkerLiteTests;
+			productName = MedlinkerLiteTests;
+			productReference = 0DB595D121AE7D7B00AF61FC /* MedlinkerLiteTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		0DB595DB21AE7D7B00AF61FC /* MedlinkerLiteUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0DB595EB21AE7D7C00AF61FC /* Build configuration list for PBXNativeTarget "MedlinkerLiteUITests" */;
+			buildPhases = (
+				0DB595D821AE7D7B00AF61FC /* Sources */,
+				0DB595D921AE7D7B00AF61FC /* Frameworks */,
+				0DB595DA21AE7D7B00AF61FC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0DB595DE21AE7D7B00AF61FC /* PBXTargetDependency */,
+			);
+			name = MedlinkerLiteUITests;
+			productName = MedlinkerLiteUITests;
+			productReference = 0DB595DC21AE7D7B00AF61FC /* MedlinkerLiteUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0DB595B521AE7D7700AF61FC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "yang cai";
+				TargetAttributes = {
+					0DB595BC21AE7D7800AF61FC = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					0DB595D021AE7D7B00AF61FC = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 0DB595BC21AE7D7800AF61FC;
+					};
+					0DB595DB21AE7D7B00AF61FC = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 0DB595BC21AE7D7800AF61FC;
+					};
+				};
+			};
+			buildConfigurationList = 0DB595B821AE7D7700AF61FC /* Build configuration list for PBXProject "MedlinkerLite" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 0DB595B421AE7D7700AF61FC;
+			productRefGroup = 0DB595BE21AE7D7800AF61FC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0DB595BC21AE7D7800AF61FC /* MedlinkerLite */,
+				0DB595D021AE7D7B00AF61FC /* MedlinkerLiteTests */,
+				0DB595DB21AE7D7B00AF61FC /* MedlinkerLiteUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0DB595BB21AE7D7800AF61FC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0DB5961221B1113C00AF61FC /* Login.storyboard in Resources */,
+				0DB595CB21AE7D7B00AF61FC /* LaunchScreen.storyboard in Resources */,
+				0DB595C821AE7D7B00AF61FC /* Assets.xcassets in Resources */,
+				0DB595C621AE7D7800AF61FC /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0DB595CF21AE7D7B00AF61FC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0DB595DA21AE7D7B00AF61FC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3814AAAE355DE25789774CD4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MedlinkerLite-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		38768180D4BB9DDBE82F3D79 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-MedlinkerLite/Pods-MedlinkerLite-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/AlamofireObjectMapper/AlamofireObjectMapper.framework",
+				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
+				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
+				"${BUILT_PRODUCTS_DIR}/RTRootNavigationController/RTRootNavigationController.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftProtobuf/SwiftProtobuf.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireObjectMapper.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RTRootNavigationController.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftProtobuf.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MedlinkerLite/Pods-MedlinkerLite-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0DB595B921AE7D7800AF61FC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0DB595F721AFD48200AF61FC /* PatientCell.swift in Sources */,
+				0DC5E40321BA563F00EA7479 /* user.pb.swift in Sources */,
+				0DC5E40621BA563F00EA7479 /* card.pb.swift in Sources */,
+				0DB5960321AFED9200AF61FC /* MLConfiguration.swift in Sources */,
+				0D24800721B232670044A91A /* PatientSearchResultsController.swift in Sources */,
+				0D24800A21B263D20044A91A /* IMType.swift in Sources */,
+				0DC5E40921BA563F00EA7479 /* location.pb.swift in Sources */,
+				0DB5961721B113EF00AF61FC /* ResponseData.swift in Sources */,
+				0DC5E40421BA563F00EA7479 /* group.pb.swift in Sources */,
+				0DB5960E21AFFF5A00AF61FC /* MLConstant+UserDefaultKey.swift in Sources */,
+				0DC5E40721BA563F00EA7479 /* anchor.pb.swift in Sources */,
+				0DB5960721AFFE8000AF61FC /* MLConstant+WebServicePath.swift in Sources */,
+				0DC5E41221BA563F00EA7479 /* group_operation.pb.swift in Sources */,
+				0DC5E41021BA563F00EA7479 /* friend_operation.pb.swift in Sources */,
+				0DC5E40F21BA563F00EA7479 /* withdraw.pb.swift in Sources */,
+				0DC5E40E21BA563F00EA7479 /* notice.pb.swift in Sources */,
+				0DB5961521B112E500AF61FC /* LoginViewController.swift in Sources */,
+				0DC5E3ED21BA4E9400EA7479 /* IMUser.swift in Sources */,
+				0DC5E41321BA563F00EA7479 /* message.pb.swift in Sources */,
+				0DC5E40D21BA563F00EA7479 /* business_notify.pb.swift in Sources */,
+				0DB595FC21AFD94600AF61FC /* CYObjectTool.swift in Sources */,
+				0DC5E40521BA563F00EA7479 /* json.pb.swift in Sources */,
+				0DB595EF21AE8E7C00AF61FC /* PatientsListTableViewController.swift in Sources */,
+				0DB5961D21B127EA00AF61FC /* UserModel.swift in Sources */,
+				0DB595C321AE7D7800AF61FC /* ViewController.swift in Sources */,
+				0DC5E43121BA5F0B00EA7479 /* MsgViewController.swift in Sources */,
+				0DB595FF21AFE25800AF61FC /* CYNetwork.swift in Sources */,
+				0DB5960121AFED7300AF61FC /* MLHTTPClientURLPath.swift in Sources */,
+				0DB595F121AE9C9100AF61FC /* PendingTableViewController.swift in Sources */,
+				0DC5E40821BA563F00EA7479 /* voice.pb.swift in Sources */,
+				0DB5962021B128CF00AF61FC /* CYModel.swift in Sources */,
+				0DB595C121AE7D7800AF61FC /* AppDelegate.swift in Sources */,
+				0DC5E41121BA563F00EA7479 /* login.pb.swift in Sources */,
+				0DC5E43321BA609600EA7479 /* MsgModel.swift in Sources */,
+				0DB5960C21AFFF5A00AF61FC /* MLConstant.swift in Sources */,
+				0DB595FA21AFD84200AF61FC /* Patient.swift in Sources */,
+				0DB5960521AFFD3A00AF61FC /* MLAppInfo.swift in Sources */,
+				0DC5E40B21BA563F00EA7479 /* image.pb.swift in Sources */,
+				0DC5E41621BA578700EA7479 /* MessageSendCenter.swift in Sources */,
+				0DB595F321AEACAD00AF61FC /* MsgTableViewDelegate.swift in Sources */,
+				0DC5E40A21BA563F00EA7479 /* text.pb.swift in Sources */,
+				0DB5960F21AFFF5A00AF61FC /* MLConstant+Common.swift in Sources */,
+				0DC5E40C21BA563F00EA7479 /* business_card.pb.swift in Sources */,
+				0DB595F521AEAE5300AF61FC /* PendingMsgTableViewCell.swift in Sources */,
+				0DB5960D21AFFF5A00AF61FC /* MLConstant+CacheKey.swift in Sources */,
+				0DB5961921B11F8A00AF61FC /* User.swift in Sources */,
+				0DB5961B21B121D800AF61FC /* LoginUser.swift in Sources */,
+				0DB5962321B1314900AF61FC /* PatientModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0DB595CD21AE7D7B00AF61FC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0DB595D621AE7D7B00AF61FC /* MedlinkerLiteTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0DB595D821AE7D7B00AF61FC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0DB595E121AE7D7B00AF61FC /* MedlinkerLiteUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0DB595D321AE7D7B00AF61FC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0DB595BC21AE7D7800AF61FC /* MedlinkerLite */;
+			targetProxy = 0DB595D221AE7D7B00AF61FC /* PBXContainerItemProxy */;
+		};
+		0DB595DE21AE7D7B00AF61FC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0DB595BC21AE7D7800AF61FC /* MedlinkerLite */;
+			targetProxy = 0DB595DD21AE7D7B00AF61FC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		0DB595C421AE7D7800AF61FC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0DB595C521AE7D7800AF61FC /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		0DB595C921AE7D7B00AF61FC /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0DB595CA21AE7D7B00AF61FC /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0DB595E321AE7D7C00AF61FC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 20181218.07;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = MedlinkerLite/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Debug;
+		};
+		0DB595E421AE7D7C00AF61FC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 20181218.07;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = MedlinkerLite/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Release;
+		};
+		0DB595E621AE7D7C00AF61FC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 98A0D28175D4A5D90352E037 /* Pods-MedlinkerLite.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 298LEY82V6;
+				INFOPLIST_FILE = MedlinkerLite/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Medlinker.MedlinkerLite;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		0DB595E721AE7D7C00AF61FC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 04154756FA875FCA3CBBACE2 /* Pods-MedlinkerLite.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 298LEY82V6;
+				INFOPLIST_FILE = MedlinkerLite/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Medlinker.MedlinkerLite;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		0DB595E921AE7D7C00AF61FC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 298LEY82V6;
+				INFOPLIST_FILE = MedlinkerLiteTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Medlinker.MedlinkerLiteTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MedlinkerLite.app/MedlinkerLite";
+			};
+			name = Debug;
+		};
+		0DB595EA21AE7D7C00AF61FC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 298LEY82V6;
+				INFOPLIST_FILE = MedlinkerLiteTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Medlinker.MedlinkerLiteTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MedlinkerLite.app/MedlinkerLite";
+			};
+			name = Release;
+		};
+		0DB595EC21AE7D7C00AF61FC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 298LEY82V6;
+				INFOPLIST_FILE = MedlinkerLiteUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Medlinker.MedlinkerLiteUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MedlinkerLite;
+			};
+			name = Debug;
+		};
+		0DB595ED21AE7D7C00AF61FC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 298LEY82V6;
+				INFOPLIST_FILE = MedlinkerLiteUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Medlinker.MedlinkerLiteUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MedlinkerLite;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0DB595B821AE7D7700AF61FC /* Build configuration list for PBXProject "MedlinkerLite" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0DB595E321AE7D7C00AF61FC /* Debug */,
+				0DB595E421AE7D7C00AF61FC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0DB595E521AE7D7C00AF61FC /* Build configuration list for PBXNativeTarget "MedlinkerLite" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0DB595E621AE7D7C00AF61FC /* Debug */,
+				0DB595E721AE7D7C00AF61FC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0DB595E821AE7D7C00AF61FC /* Build configuration list for PBXNativeTarget "MedlinkerLiteTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0DB595E921AE7D7C00AF61FC /* Debug */,
+				0DB595EA21AE7D7C00AF61FC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0DB595EB21AE7D7C00AF61FC /* Build configuration list for PBXNativeTarget "MedlinkerLiteUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0DB595EC21AE7D7C00AF61FC /* Debug */,
+				0DB595ED21AE7D7C00AF61FC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0DB595B521AE7D7700AF61FC /* Project object */;
+}

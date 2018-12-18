@@ -1,0 +1,6 @@
+framework module Pods_MedlinkerLite {
+  umbrella header "Pods-MedlinkerLite-umbrella.h"
+
+  export *
+  module * { export * }
+}
